@@ -1,5 +1,54 @@
-header,
-section,
-footer {
-  border: 1px solid;
+:root {
+  --titles-color: #212121;
+  --accent-color: #2196f3;
+  --text-color: #757575;
+}
+
+* {
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.list,
+.team-list,
+.contacts-list {
+  list-style: none;
+}
+
+.page {
+  background-color: #e5e5e5;
+}
+
+/* header/footer */
+
+.logo {
+  color: var(--accent-color), 100%;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+
+.link-active {
+  color: var(--accent-color);
+}
+
+/* main  */
+
+.section-title {
+  font-weight: 700px;
+  color: var(--titles-color);
+}
+
+.list > h3 {
+  font-weight: 500px;
+  color: var(--titles-color);
+}
+
+.list p {
+  font-weight: 400px;
+  color: var(--text-color);
 }
