@@ -2,6 +2,8 @@
   --titles-color: #212121;
   --accent-color: #2196f3;
   --text-color: #757575;
+  --blackground: #2f303a;
+  --white-text: #ffffff;
 }
 
 * {
@@ -15,14 +17,22 @@
   list-style: none;
 }
 
-.page {
-  background-color: #e5e5e5;
-}
-
 /* header/footer */
 
 .logo {
+  font-family: Raleway;
+  font-weight: 700;
   color: var(--accent-color), 100%;
+}
+
+.site-nav {
+  font-weight: 500;
+  color: var(--titles-color);
+}
+
+.footer > .contacts-list {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .site-nav .link:hover,
@@ -36,19 +46,8 @@
   color: var(--accent-color);
 }
 
-/* main  */
-
-.section-title {
-  font-weight: 700px;
-  color: var(--titles-color);
-}
-
-.list > h3 {
-  font-weight: 500px;
-  color: var(--titles-color);
-}
-
-.list p {
-  font-weight: 400px;
-  color: var(--text-color);
+.ftr {
+  font-weight: 400;
+  background-color: var(--blackground);
+  color: var(--white-text);
 }
