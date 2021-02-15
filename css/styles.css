@@ -1,3 +1,17 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -23,10 +37,10 @@ header .logo-fragment {
 }
 
 .nav-link {
-  color: var(--titles-color);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  color: var(--titles-color);
 }
 
 .nav-link:hover,
@@ -36,11 +50,6 @@ header .logo-fragment {
 
 .active {
   color: var(--accent-color);
-}
-
-.current-page:hover,
-.current-page:focus {
-  color: var(--hover-background-color);
 }
 
 header .address-item {
@@ -84,26 +93,49 @@ header .address-item {
   border: none;
 }
 
-.section-title,
-.list > h2 {
-  font-weight: 700px;
+/* benefits sections */
+
+.benefits-title {
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
   color: var(--titles-color);
 }
 
-.list > h3 {
-  font-weight: 500px;
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
   color: var(--titles-color);
 }
 
-.list p {
-  font-weight: 400px;
+/* Team */
+
+.member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--titles-color);
+}
+
+.post {
+  font-size: 16px;
+  line-height: 1.2;
   color: var(--text-color);
 }
 
 /* portfolio */
 
-button {
-  font-family: in;
+.list {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.list-title {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  color: var(--titles-color);
 }
 
 /* footer */
@@ -117,10 +149,10 @@ footer {
 }
 
 footer .address-item {
-  color: var(--adress-transparency-color);
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--adress-transparency-color);
 }
 
 footer .logo-fragment {
